@@ -19,7 +19,7 @@ const blogPosts = {
   }
 };
 
-// Add the generateStaticParams function
+// Generate static params for the dynamic route
 export function generateStaticParams() {
   return [
     { slug: 'getting-started-with-ai' },
@@ -37,7 +37,7 @@ export default function Page({ params }) {
     return (
       <main className="container mx-auto px-4 py-12">
         <h1 className="text-3xl font-bold mb-6">Post Not Found</h1>
-        <p>The blog post you're looking for doesn't exist.</p>
+        <p>The blog post you are looking for does not exist.</p>
         <Link href="/blog" className="text-blue-600 hover:text-blue-800 mt-4 inline-block">
           ← Back to Blog
         </Link>
