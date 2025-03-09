@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export', // Generate static HTML export
+  output: 'export',
   typescript: {
     ignoreBuildErrors: true,
   },

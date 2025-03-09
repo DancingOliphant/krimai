@@ -19,6 +19,15 @@ const blogPosts = {
   }
 };
 
+// Add the generateStaticParams function
+export function generateStaticParams() {
+  return [
+    { slug: 'getting-started-with-ai' },
+    { slug: 'machine-learning-basics' },
+    { slug: 'future-of-ai' }
+  ];
+}
+
 // Create the page component
 export default function Page({ params }) {
   const slug = params.slug;
