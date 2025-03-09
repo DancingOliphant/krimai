@@ -6,7 +6,7 @@ const blogPosts: Record<string, { title: string; date: string; content: string }
     title: 'Getting Started with AI',
     date: 'March 5, 2025',
     content: `
-      <p>Artificial Intelligence (AI) is transforming industries across the globe. For businesses looking to leverage this technology, it's important to understand the basics and how to get started.</p>
+      <p>Artificial Intelligence (AI) is transforming industries across the globe. For businesses looking to leverage this technology, it&apos;s important to understand the basics and how to get started.</p>
       
       <h2>What is AI?</h2>
       <p>At its core, AI refers to machines programmed to mimic human intelligence. This includes learning from experience, recognizing patterns, and making decisions. AI systems can process vast amounts of data and identify insights that would be impossible for humans to discover manually.</p>
@@ -21,7 +21,7 @@ const blogPosts: Record<string, { title: string; date: string; content: string }
       </ul>
       
       <h2>Getting Started</h2>
-      <p>If you're ready to implement AI in your business, here are some steps to get started:</p>
+      <p>If you&apos;re ready to implement AI in your business, here are some steps to get started:</p>
       <ol>
         <li>Define your business objectives and identify areas where AI could add value</li>
         <li>Evaluate your data infrastructure and ensure you have quality data</li>
@@ -40,7 +40,7 @@ const blogPosts: Record<string, { title: string; date: string; content: string }
       <p>Machine Learning (ML) is a subset of artificial intelligence that focuses on building systems that learn from data. This article covers the fundamentals of machine learning and its applications.</p>
       
       <h2>How Machine Learning Works</h2>
-      <p>Machine learning algorithms use computational methods to "learn" information directly from data without relying on predetermined equations. The algorithms adaptively improve their performance as the number of samples available for learning increases.</p>
+      <p>Machine learning algorithms use computational methods to &quot;learn&quot; information directly from data without relying on predetermined equations. The algorithms adaptively improve their performance as the number of samples available for learning increases.</p>
     `
   },
   'future-of-ai': {
@@ -66,7 +66,7 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
     return (
       <main className="container mx-auto px-4 py-12">
         <h1 className="text-3xl font-bold mb-6">Post Not Found</h1>
-        <p>The blog post you're looking for doesn't exist.</p>
+        <p>The blog post you&apos;re looking for doesn&apos;t exist.</p>
         <Link href="/blog" className="text-blue-600 hover:text-blue-800 mt-4 inline-block">
           ← Back to Blog
         </Link>

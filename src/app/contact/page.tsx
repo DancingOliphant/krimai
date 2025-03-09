@@ -51,7 +51,7 @@ export default function Contact() {
           info: { error: true, msg: data.message || 'Something went wrong. Please try again later.' }
         });
       }
-    } catch (error) {
+    } catch (_) {
       setStatus({
         submitted: false,
         submitting: false,
