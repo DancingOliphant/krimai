@@ -248,7 +248,7 @@ export default function Contact() {
                 {
                   question: 'Do you offer demos for potential customers?',
                   answer: 'Yes! We offer personalized demos for teams and companies interested in our Pro and Enterprise plans. Please select "Sales Question" from the subject dropdown.'
-                }
+                },
               ].map((faq, index) => (
                 <div key={index} className="bg-gray-900 p-6 rounded-xl border border-gray-800">
                   <h3 className="text-xl font-semibold mb-3">{faq.question}</h3>
