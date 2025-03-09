@@ -5,9 +5,6 @@ const nextConfig = {
   },
   eslint: {
     ignoreDuringBuilds: true,
-  },
-  experimental: {
-    // Add any specific experimental features if needed
   }
 }
 
