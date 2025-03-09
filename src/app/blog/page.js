@@ -1,14 +1,13 @@
 import Link from 'next/link';
 
 export default function Blog() {
-  const blogPosts = [
-    {
-      slug: 'getting-started-with-ai',
-      title: 'Getting Started with AI',
-      excerpt: 'A beginner's guide to understanding and implementing AI in your business.',
-      date: 'March 5, 2025',
-      category: 'Guides'
-    },
+  const post = {
+  slug: 'getting-started-with-ai',
+  title: 'Getting Started with AI',
+  excerpt: 'A beginner\'s guide to understanding and implementing AI in your business.',  // Make sure there is a comma after this
+  date: 'March 5, 2025',
+  category: 'Guides',
+};
     {
       slug: 'machine-learning-basics',
       title: 'Machine Learning Basics',
