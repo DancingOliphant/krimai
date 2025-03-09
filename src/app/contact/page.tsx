@@ -51,7 +51,8 @@ export default function Contact() {
           info: { error: true, msg: data.message || 'Something went wrong. Please try again later.' }
         });
       }
-    } catch (_) {
+    } catch {
+      // Omitting the error parameter completely
       setStatus({
         submitted: false,
         submitting: false,
