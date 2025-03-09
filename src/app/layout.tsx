@@ -1,14 +1,12 @@
 import './globals.css';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
-import Navbar from '@/components/Navbar';
-import Footer from '@/components/Footer';
 
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Krimai - Next Generation AI Solutions',
-  description: 'Powerful AI solutions for your business needs',
+  title: 'Krimai - AI Solutions',
+  description: 'Providing cutting-edge AI solutions',
 };
 
 export default function RootLayout({
@@ -19,9 +17,17 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Navbar />
+        <header className="bg-blue-500 text-white p-4">
+          <div className="container mx-auto">
+            <h1 className="text-2xl font-bold">Krimai</h1>
+          </div>
+        </header>
         {children}
-        <Footer />
+        <footer className="bg-gray-800 text-white p-4 mt-auto">
+          <div className="container mx-auto">
+            <p>© {new Date().getFullYear()} Krimai. All rights reserved.</p>
+          </div>
+        </footer>
       </body>
     </html>
   );
