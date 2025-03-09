@@ -19,18 +19,6 @@ const blogPosts: Record<string, { title: string; date: string; content: string }
         <li><strong>Computer Vision:</strong> Allows machines to interpret and understand visual information</li>
         <li><strong>Predictive Analytics:</strong> Uses historical data to forecast future outcomes</li>
       </ul>
-      
-      <h2>Getting Started</h2>
-      <p>If you&apos;re ready to implement AI in your business, here are some steps to get started:</p>
-      <ol>
-        <li>Define your business objectives and identify areas where AI could add value</li>
-        <li>Evaluate your data infrastructure and ensure you have quality data</li>
-        <li>Start with small, focused projects to demonstrate value</li>
-        <li>Build or hire the necessary expertise</li>
-        <li>Implement, measure results, and iterate</li>
-      </ol>
-      
-      <p>By taking a strategic approach to AI implementation, businesses of all sizes can begin to harness the power of this transformative technology.</p>
     `
   },
   'machine-learning-basics': {
@@ -40,7 +28,7 @@ const blogPosts: Record<string, { title: string; date: string; content: string }
       <p>Machine Learning (ML) is a subset of artificial intelligence that focuses on building systems that learn from data. This article covers the fundamentals of machine learning and its applications.</p>
       
       <h2>How Machine Learning Works</h2>
-      <p>Machine learning algorithms use computational methods to &quot;learn&quot; information directly from data without relying on predetermined equations. The algorithms adaptively improve their performance as the number of samples available for learning increases.</p>
+      <p>Machine learning algorithms use computational methods to &quot;learn&quot; information directly from data without relying on predetermined equations.</p>
     `
   },
   'future-of-ai': {
@@ -50,16 +38,12 @@ const blogPosts: Record<string, { title: string; date: string; content: string }
       <p>Artificial Intelligence is evolving at an unprecedented rate. This article explores emerging trends and future directions in AI technology.</p>
       
       <h2>Emerging Trends</h2>
-      <p>Several key trends are shaping the future of AI:</p>
-      <ul>
-        <li><strong>Multimodal AI:</strong> Systems that can process and understand multiple types of data (text, images, audio)</li>
-        <li><strong>AI Transparency:</strong> Increased focus on explainable AI that can justify its decisions</li>
-      </ul>
+      <p>Several key trends are shaping the future of AI.</p>
     `
   }
 };
 
-export default function BlogPost({ params }: { params: { slug: string } }) {
+export default async function Page({ params }: { params: { slug: string } }) {
   const post = blogPosts[params.slug];
   
   if (!post) {
