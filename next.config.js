@@ -1,12 +1,14 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   typescript: {
-    // Allow production builds to successfully complete even with type errors
     ignoreBuildErrors: true,
   },
   eslint: {
-    // Disabling eslint during build since we're handling it separately
     ignoreDuringBuilds: true,
+  },
+  // Explicitly set experimental options if needed
+  experimental: {
+    // Add any specific experimental features here
   }
 }
 
