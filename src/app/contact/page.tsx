@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Link from 'next/link';
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -39,7 +40,7 @@ export default function Contact() {
               Get in Touch
             </h1>
             <p className="text-xl md:text-2xl text-gray-300 mb-10">
-              Have questions or want to learn more? We'd love to hear from you.
+              Have questions or want to learn more? We&apos;d love to hear from you.
             </p>
           </div>
         </div>
@@ -104,7 +105,7 @@ export default function Contact() {
                     </div>
                     <h3 className="text-2xl font-bold mb-2">Message Sent!</h3>
                     <p className="text-gray-300 mb-6">
-                      Thank you for reaching out. We'll get back to you as soon as possible.
+                      Thank you for reaching out. We&apos;ll get back to you as soon as possible.
                     </p>
                     <button 
                       onClick={() => {
@@ -208,53 +209,6 @@ export default function Contact() {
                   </form>
                 )}
               </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Map or Office Image Section */}
-      <section className="py-20 bg-gray-900">
-        <div className="container mx-auto px-4">
-          <div className="max-w-5xl mx-auto">
-            <h2 className="text-3xl font-bold mb-8 text-center">Our Offices</h2>
-            <div className="bg-gray-800 rounded-xl overflow-hidden h-[400px] flex items-center justify-center">
-              <p className="text-gray-400">Interactive Map Would Be Displayed Here</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* FAQ Section */}
-      <section className="py-20">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold mb-12 text-center">Common Questions</h2>
-            
-            <div className="space-y-6">
-              {[
-                {
-                  question: 'What is the typical response time for inquiries?',
-                  answer: 'We typically respond to all inquiries within 24 business hours. For urgent matters, please indicate that in your message subject.'
-                },
-                {
-                  question: 'Do you offer support on weekends?',
-                  answer: 'Our customer support team is available Monday through Friday, 9am to 5pm PST. For premium and enterprise customers, we offer extended support hours.'
-                },
-                {
-                  question: 'I'm having technical issues. Where can I get help?',
-                  answer: 'For technical support, please email support@krimai.com or use the contact form with "Technical Support" as the subject.'
-                },
-                {
-                  question: 'Do you offer demos for potential customers?',
-                  answer: 'Yes! We offer personalized demos for teams and companies interested in our Pro and Enterprise plans. Please select "Sales Question" from the subject dropdown.'
-                }
-              ].map((faq, index) => (
-                <div key={index} className="bg-gray-900 p-6 rounded-xl border border-gray-800">
-                  <h3 className="text-xl font-semibold mb-3">{faq.question}</h3>
-                  <p className="text-gray-300">{faq.answer}</p>
-                </div>
-              ))}
             </div>
           </div>
         </div>

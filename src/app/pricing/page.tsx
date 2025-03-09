@@ -10,7 +10,7 @@ export default function Pricing() {
               Simple, Transparent Pricing
             </h1>
             <p className="text-xl md:text-2xl text-gray-300 mb-10">
-              Choose the plan that's right for you, from individual users to enterprise teams.
+              Choose the plan that&apos;s right for you, from individual users to enterprise teams.
             </p>
           </div>
         </div>
@@ -125,85 +125,6 @@ export default function Pricing() {
                   Try Free for 14 Days
                 </a>
               </div>
-            </div>
-          </div>
-          
-          {/* Enterprise Plan */}
-          <div className="max-w-6xl mx-auto mt-16 bg-gray-900 rounded-xl p-8 border border-gray-800">
-            <div className="flex flex-col md:flex-row md:items-center md:justify-between">
-              <div className="mb-6 md:mb-0">
-                <h3 className="text-2xl font-bold mb-2">Enterprise</h3>
-                <p className="text-gray-400">Custom solutions for large organizations with advanced needs.</p>
-              </div>
-              <div>
-                <a href="/contact-sales" className="inline-block py-3 px-6 bg-white/10 hover:bg-white/20 text-center rounded-lg transition font-medium">
-                  Contact Sales
-                </a>
-              </div>
-            </div>
-            <div className="mt-8 grid md:grid-cols-3 gap-6">
-              {[
-                {
-                  title: 'Custom Integrations',
-                  description: 'Connect Krimai to your existing systems and workflows.'
-                },
-                {
-                  title: 'Enhanced Security',
-                  description: 'Advanced security features including SSO, audit logs, and more.'
-                },
-                {
-                  title: 'Dedicated Support',
-                  description: 'Get priority support with a dedicated account manager.'
-                }
-              ].map((feature, index) => (
-                <div key={index} className="border border-gray-800 rounded-lg p-4">
-                  <h4 className="font-semibold mb-2">{feature.title}</h4>
-                  <p className="text-gray-400 text-sm">{feature.description}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* FAQ Section */}
-      <section className="py-20 bg-gray-900">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold mb-12 text-center">Frequently Asked Questions</h2>
-            
-            <div className="space-y-6">
-              {[
-                {
-                  question: 'Can I switch plans later?',
-                  answer: 'Yes, you can upgrade or downgrade your plan at any time. Changes to your billing will be prorated.'
-                },
-                {
-                  question: 'Is there a long-term contract?',
-                  answer: 'No, all our plans are month-to-month with no long-term commitment required. You can cancel anytime.'
-                },
-                {
-                  question: 'What payment methods do you accept?',
-                  answer: 'We accept all major credit cards, as well as PayPal. Enterprise customers may also pay by invoice.'
-                },
-                {
-                  question: 'Do you offer educational or non-profit discounts?',
-                  answer: 'Yes, we offer special pricing for educational institutions and non-profit organizations. Please contact our sales team for details.'
-                },
-                {
-                  question: 'How secure is my data?',
-                  answer: 'We take security very seriously. All data is encrypted in transit and at rest, and we follow industry best practices for data protection.'
-                },
-                {
-                  question: 'What happens when my trial ends?',
-                  answer: 'At the end of your 14-day trial, you'll be automatically switched to the paid plan you selected. We'll send you a reminder before charging your card.'
-                }
-              ].map((faq, index) => (
-                <div key={index} className="bg-gray-800 p-6 rounded-xl">
-                  <h3 className="text-xl font-semibold mb-3">{faq.question}</h3>
-                  <p className="text-gray-300">{faq.answer}</p>
-                </div>
-              ))}
             </div>
           </div>
         </div>
