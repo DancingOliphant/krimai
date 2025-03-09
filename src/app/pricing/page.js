@@ -196,7 +196,7 @@ export default function Pricing() {
                 },
                 {
                   question: 'What happens when my trial ends?',
-                  answer: 'At the end of your 14-day trial, you'll be automatically switched to the paid plan you selected. We'll send you a reminder before charging your card.'
+                  answer: 'At the end of your 14-day trial, you\'ll be automatically switched to the paid plan you selected. We'll send you a reminder before charging your card.'
                 }
               ].map((faq, index) => (
                 <div key={index} className="bg-gray-800 p-6 rounded-xl">
