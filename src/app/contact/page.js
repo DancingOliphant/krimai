@@ -241,7 +241,7 @@ export default function Contact() {
                   answer: 'Our customer support team is available Monday through Friday, 9am to 5pm PST. For premium and enterprise customers, we offer extended support hours.'
                 },
                 {
-                  question: 'I\'m having technical issues. Where can I get help?',
+                  question: 'I'm having technical issues. Where can I get help?',
                   answer: 'For technical support, please email support@krimai.com or use the contact form with "Technical Support" as the subject.'
                 },
                 {
