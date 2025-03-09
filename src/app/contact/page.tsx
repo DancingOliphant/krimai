@@ -1,11 +1,13 @@
+'use client';
+
 import React from 'react';
 
 export default function ContactPage() {
   return (
-    <main className="min-h-screen bg-gray-900 flex items-center justify-center p-4">
-      <div className="max-w-md w-full bg-gray-800 p-8 rounded-lg">
-        <h1 className="text-2xl font-bold text-white mb-6 text-center">Contact Us</h1>
-        <form>
+    <div className="min-h-screen bg-gray-900 flex items-center justify-center p-4">
+      <div className="w-full max-w-md">
+        <h1 className="text-3xl font-bold text-white text-center mb-6">Contact Us</h1>
+        <form className="bg-gray-800 p-6 rounded-lg">
           <div className="mb-4">
             <label htmlFor="name" className="block text-white mb-2">Name</label>
             <input 
@@ -30,6 +32,6 @@ export default function ContactPage() {
           </button>
         </form>
       </div>
-    </main>
+    </div>
   );
 }

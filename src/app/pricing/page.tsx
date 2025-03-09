@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function PricingPage() {
   return (
-    <main className="min-h-screen bg-gray-900 p-4">
+    <div className="min-h-screen bg-gray-900 p-4 py-12">
       <div className="max-w-4xl mx-auto">
         <h1 className="text-4xl font-bold text-white text-center mb-12">Pricing Plans</h1>
         <div className="grid md:grid-cols-3 gap-6">
@@ -49,6 +49,6 @@ export default function PricingPage() {
           </div>
         </div>
       </div>
-    </main>
+    </div>
   );
 }

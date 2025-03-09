@@ -1,11 +1,13 @@
+'use client';
+
 import React from 'react';
 
 export default function LoginPage() {
   return (
-    <main className="min-h-screen bg-gray-900 flex items-center justify-center p-4">
-      <div className="max-w-md w-full bg-gray-800 p-8 rounded-lg">
-        <h1 className="text-2xl font-bold text-white mb-6 text-center">Login</h1>
-        <form>
+    <div className="min-h-screen bg-gray-900 flex items-center justify-center p-4">
+      <div className="w-full max-w-md">
+        <h1 className="text-3xl font-bold text-white text-center mb-6">Login</h1>
+        <form className="bg-gray-800 p-6 rounded-lg">
           <div className="mb-4">
             <label htmlFor="email" className="block text-white mb-2">Email</label>
             <input 
@@ -30,6 +32,6 @@ export default function LoginPage() {
           </button>
         </form>
       </div>
-    </main>
+    </div>
   );
 }
