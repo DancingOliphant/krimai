@@ -29,7 +29,6 @@ export default function Contact() {
 
   return (
     <div className="flex flex-col">
-      {/* Hero Section */}
       <section className="relative py-20 md:py-32 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-blue-900/20 to-transparent"></div>
         <div className="container mx-auto px-4 relative z-10">
@@ -44,12 +43,10 @@ export default function Contact() {
         </div>
       </section>
 
-      {/* Contact Form Section */}
       <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
             <div className="grid md:grid-cols-2 gap-12">
-              {/* Contact Info */}
               <div>
                 <h2 className="text-3xl font-bold mb-8">Contact Information</h2>
                 
@@ -94,7 +91,6 @@ export default function Contact() {
                 </div>
               </div>
               
-              {/* Form */}
               <div className="bg-gray-900 p-8 rounded-xl border border-gray-800">
                 {submitted ? (
                   <div className="text-center py-12">
@@ -212,7 +208,6 @@ export default function Contact() {
         </div>
       </section>
 
-      {/* Map Section */}
       <section className="py-20 bg-gray-900">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
@@ -224,7 +219,6 @@ export default function Contact() {
         </div>
       </section>
 
-      {/* FAQ Section */}
       <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
@@ -241,7 +235,7 @@ export default function Contact() {
                   answer: 'Our customer support team is available Monday through Friday, 9am to 5pm PST. For premium and enterprise customers, we offer extended support hours.'
                 },
                 {
-                  question: 'I'm having technical issues. Where can I get help?',
+                  question: 'I\'m having technical issues. Where can I get help?',
                   answer: 'For technical support, please email support@krimai.com or use the contact form with "Technical Support" as the subject.'
                 },
                 {
