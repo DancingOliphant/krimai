@@ -4,7 +4,7 @@ export default function Blog() {
   const post = {
   slug: 'getting-started-with-ai',
   title: 'Getting Started with AI',
-  excerpt: 'A beginner\'s guide to understanding and implementing AI in your business.',  // Make sure there is a comma after this
+  excerpt: 'A beginner\'s guide to understanding and implementing AI in your business.',  // Ensure this line ends with a comma
   date: 'March 5, 2025',
   category: 'Guides',
 };
